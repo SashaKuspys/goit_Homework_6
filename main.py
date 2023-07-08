@@ -74,16 +74,16 @@ def main(folder: Path):
     
 
     for file in parser.MY_OTHER:
-        handle_media(file, folder / 'MY_OTHER')
+        handle_other(file, folder / 'MY_OTHER')
     
     for file in parser.ZIP_ARCHIVES:
-        handle_media(file, folder / 'ARCHIVES' / 'ZIP')
+        handle_archive(file, folder / 'ARCHIVES' / 'ZIP')
     for file in parser.GZ_ARCHIVES:
-        handle_media(file, folder / 'ARCHIVES' / 'GZ')
+        handle_archive(file, folder / 'ARCHIVES' / 'GZ')
     for file in parser.TAR_ARCHIVES:
-        handle_media(file, folder / 'ARCHIVES' / 'TAR')
+        handle_archive(file, folder / 'ARCHIVES' / 'TAR')
     for file in parser.RAR_ARCHIVES:
-        handle_media(file, folder / 'ARCHIVES' / 'RAR')
+        handle_archive(file, folder / 'ARCHIVES' / 'RAR')
 
     
 
